@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova a1 - formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>O Big 3</h1>
+        <hr>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="destaques.html">Destaques</a>
+        <a href="formulario.html">Formulário</a>
+    </nav>
+
+    <main>
+        <h2>Formulário</h2>
+
+        <section>
+            <article>
+                <form action="formulario.php" method="POST">
+                    <label for="data">Data do dia:</label>
+                    <input type="date" id="data" name="data" placeholder="Data do dia" required><br><br>
+
+                    <label for="arquivo">Curriculo de trabalho:</label>
+                    <input type="file" id="arquivo" name="arquivo" placeholder="arquivo aqui" required><br><br>
+
+                    <label for="barra">Barra de audio:</label>
+                    <input type="range" id="barra" name="barra" placeholder="barra aqui" required><br><br>
+
+                    <label for="protagonista">Protagonista favorito:</label>
+                    <input list="protagonista" placeholder="protagonista" required><br><br>
+
+                    <datalist id="protagonista" name="protagonista" required>
+                        <option value="">Selecione</option>
+                        <option value="Luffy">Luffy</option>
+                        <option value="Naruto">Naruto</option>
+                        <option value="Ichigo">Ichigo</option>
+                    </datalist>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <p><del>Tive dificuldade para colocar estrutura semantica completa em todas as paginas</del></p>
+        <label for="file">projeto: 100% completo</label>
+        <progress id="file" value="100" max="100"></progress><br><br>
+        <label for="file2">nota: 10/10</label>
+        <meter id="file2" value="100" max="100"></meter>
+    </aside>
+
+    <footer>
+        <blockquote>
+            "Todo mundo entendeu? Amém?" - <abbr title="Professor">Israel Cunha</abbr>
+        </blockquote>
+    </footer>
+</body>
+
+</html>
